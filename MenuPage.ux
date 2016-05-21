@@ -1,0 +1,6 @@
+<Panel ux:Class="MenuPage">
+  <Router ux:Dependency="router" />
+  <JavaScript File="./js/MenuPage.js" />
+
+  <Button Clicked="{close_menu_clicked}" Text="Close" />
+</Panel>

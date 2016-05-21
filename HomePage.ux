@@ -1,0 +1,49 @@
+<Page ux:Class="HomePage">
+  <Router ux:Dependency="router" />
+  <JavaScript File="./js/HomePage.js" />
+
+  <Text ux:Class="GoalText" Font="Light" FontSize="12" TextColor="#ffffff40" />
+
+  <Grid RowCount="2">
+    <DockPanel>
+      <DockPanel Dock="Top" Margin="25, 0, 25, 0">
+        <MenuButton Dock="Left" Width="55" Height="40" Clicked="{menu_clicked}" />
+
+        <Button Dock="Right" Clicked="{add_exercise_clicked}">
+          <PlusSign Width="10"  />
+        </Button>
+
+      </DockPanel>
+      <NativeViewHost>
+        <WebView Url="https://tmn.io/" />
+      </NativeViewHost>
+    </DockPanel>
+
+    <DockPanel Background="#181818" Padding="25, 25, 25, 0">
+      <GoalText Dock="Top" FontSize="12" Value="DINE MÅL" Margin="0, 0, 0, 10" />
+
+      <ScrollView>
+        <StackPanel>
+          <Each Items="{goals}">
+            <StackPanel Margin="0, 22, 0, 22">
+              <DockPanel Margin="0, 0, 0, 10">
+                <WhiteText FontSize="11" Value="{name}" Dock="Left" />
+
+                <GoalText Value="{unit}" Dock="Right" />
+                <GoalText Value="{achieved}" Dock="Right" />
+                <GoalText Value=" / " Dock="Right" />
+                <GoalText Value="{unit}" Dock="Right" />
+                <GoalText Value="{goal}" Dock="Right" />
+
+              </DockPanel>
+              <Panel>
+                <Rectangle Alignment="Left" Height="1" Fill="#ffffff" Width="{progress}"/> 
+                <Rectangle Height="1" Fill="#ffffff40" />    
+              </Panel>
+            </StackPanel>
+          </Each>
+        </StackPanel>
+      </ScrollView>
+    </DockPanel>
+  </Grid>
+</Page>

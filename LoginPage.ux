@@ -1,0 +1,21 @@
+<Page ux:Class="LoginPage" Background="#2168ad">
+  <Router ux:Dependency="router" />
+  <JavaScript File="./js/LoginPage.js" />
+
+  <Image Layer="Background" File="Assets/training.jpg" StretchMode="UniformToFill" MinWidth="950" Opacity=".7">
+    <Blur Radius="4.5" />
+  </Image>
+
+  <Grid Rows="1*, 1*">
+    <StackPanel Alignment="VerticalCenter">
+      <WhiteText FontSize="50" Value="justTrain" Alignment="HorizontalCenter" />
+      <WhiteText Value="Log your training" Opacity=".5" Alignment="HorizontalCenter" />
+    </StackPanel>
+
+    <StackPanel Margin="30">
+      <WhiteTextInput PlaceholderText="username"/>
+      <WhiteTextInput PlaceholderText="password" IsPassword="true"/>
+      <Button Text="Login" Clicked="{login_clicked}" />
+    </StackPanel>
+  </Grid>
+</Page>

@@ -1,0 +1,27 @@
+<Panel ux:Class="SelectExercisePage">
+  <Router ux:Dependency="router" />
+  <JavaScript File="./js/SelectExercisePage.js" />
+
+  <Grid RowCount="3">
+    <DockPanel Margin="25">
+      <BackButton Dock="Top" Alignment="Left" Clicked="{go_back_clicked}" HitTestMode="LocalBoundsAndChildren" />
+      <Text Font="Thin" FontSize="20" Value="VELG TRENINGSPROGRAM" Alignment="Center" />
+    </DockPanel>
+
+    <DockPanel>
+      <ScrollView Background="#efefef">
+        <StackPanel >
+          <Each Items="{programList}">
+            <Panel Padding="25, 10, 25, 10" Background="{backgroundColor}" Clicked="{program_clicked}">
+              <Text Font="Light" FontSize="14" TextColor="{textColor}" Value="{name}" />
+            </Panel>
+          </Each>
+        </StackPanel>
+      </ScrollView>
+    </DockPanel>
+
+    <StackPanel Padding="25">
+      <Button Text="START TRENING" />
+    </StackPanel>
+  </Grid>
+</Panel>

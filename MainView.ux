@@ -1,0 +1,20 @@
+<App>
+	<Router ux:Name="router" />
+
+	<Font File="Assets/Fonts/SF-UI-Display-Bold.otf" ux:Global="Bold" />
+  <Font File="Assets/Fonts/SF-UI-Display-Semibold.otf" ux:Global="SemiBold" />
+  <Font File="Assets/Fonts/SF-UI-Display-Regular.otf" ux:Global="Regular" />
+  <Font File="Assets/Fonts/SF-UI-Display-Light.otf" ux:Global="Light" />
+  <Font File="Assets/Fonts/SF-UI-Display-Thin.otf" ux:Global="Thin" />
+
+	<Text ux:Class="WhiteText" Font="Light" FontSize="12" TextColor="#ffffff" />
+  <TextInput ux:Class="WhiteTextInput" Font="Light" Height="40" TextColor="#ffffff" PlaceholderColor="#ffffff80" CaretColor="#ffffff" />
+
+	<Navigator DefaultTemplate="selectExercise">
+		<LoginPage ux:Template="login" router="router" />
+		<HomePage ux:Template="home" router="router" />
+		<SelectExercisePage ux:Template="selectExercise" router="router" />
+		<MenuPage ux:Template="menu" router="router" />
+	</Navigator>
+</App>
+

@@ -1,0 +1,7 @@
+<Panel ux:Class="MenuButton" Background="#2168ad">
+  <StackPanel Alignment="Center">
+    <Rectangle Height="2" Width="15" Fill="#FFF" />
+    <Rectangle Height="2" Width="15" Fill="#FFF" Margin="0, 3, 0, 3" />
+    <Rectangle Height="2" Width="15" Fill="#FFF" />
+  </StackPanel>
+</Panel>

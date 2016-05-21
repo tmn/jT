@@ -1,0 +1,9 @@
+<Panel ux:Class="BackButton" Height="20" Width="25">
+  <Rectangle Fill="#181818" Width="10" Height="2" Alignment="CenterLeft" Y="4">
+    <Rotation Degrees="45" />
+  </Rectangle>
+  <Rectangle Fill="#181818" Width="10" Height="2" Alignment="CenterLeft" Y="-4">
+    <Rotation Degrees="-45" />
+  </Rectangle>
+  <Rectangle Fill="#181818" Width="20" Height="2" Alignment="CenterLeft" />
+</Panel>
