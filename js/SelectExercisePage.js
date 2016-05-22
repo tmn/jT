@@ -24,11 +24,9 @@ function go_back_clickHandler() {
 }
 
 function program_clickHandler(obj) {
-  console.log(JSON.stringify(obj.data.id));
   active_program = Number(obj.data.id);
 
   programList.forEach(function (program) {
-    console.log(JSON.stringify(program), active_program === program.id);
     program.textColor.value = active_program === program.id ? '#ffffff' : '#888';
     program.backgroundColor.value = active_program === program.id ? '#2168ad' : '#2168ad00';
   });
