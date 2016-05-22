@@ -5,18 +5,14 @@
   <Text ux:Class="GoalText" Font="Light" FontSize="12" TextColor="#ffffff40" />
 
   <Grid RowCount="2">
-    <DockPanel>
+    <DockPanel Background="#2168ad">
       <DockPanel Dock="Top" Margin="25, 0, 25, 0">
-        <MenuButton Dock="Left" Width="55" Height="40" Clicked="{menu_clicked}" />
-
-        <Button Dock="Right" Clicked="{add_exercise_clicked}">
-          <PlusSign Width="10"  />
-        </Button>
-
+        <MenuButton Dock="Left" Width="55" Height="40" Clicked="{menu_clicked}" HitTestMode="LocalBoundsAndChildren" />
+        <StartNewExerciseButton Dock="Right" Width="40" Clicked="{add_exercise_clicked}" HitTestMode="LocalBoundsAndChildren" />
       </DockPanel>
-      <NativeViewHost>
-        <WebView Url="https://tmn.io/" />
-      </NativeViewHost>
+
+      <!-- Graph goes here -->
+      <WebView Url="./GraphView/graph.html" />
     </DockPanel>
 
     <DockPanel Background="#181818" Padding="25, 25, 25, 0">
