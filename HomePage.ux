@@ -5,8 +5,8 @@
   <Text ux:Class="GoalText" Font="Light" FontSize="12" TextColor="#ffffff40" />
 
   <Grid RowCount="2">
-    <DockPanel Background="#2168ad">
-      <DockPanel Dock="Top" Margin="25, 0, 25, 0">
+    <DockPanel Background="#2168ad" Padding="0, 25, 0, 0">
+      <DockPanel Dock="Top" Margin="5, 0, 5, 0">
         <MenuButton Dock="Left" Width="55" Height="40" Clicked="{menu_clicked}" HitTestMode="LocalBoundsAndChildren" />
         <StartNewExerciseButton Dock="Right" Width="40" Clicked="{add_exercise_clicked}" HitTestMode="LocalBoundsAndChildren" />
       </DockPanel>
