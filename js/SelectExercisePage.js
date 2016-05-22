@@ -1,7 +1,7 @@
 var O = require('FuseJS/Observable');
 
 // Testdata
-var programmer = ['Nybegynnerprogrammet', 'Starting Strength', 'Leg day'];
+var programmer = ['Valgritt', 'Nybegynnerprogrammet', 'Starting Strength', 'Leg day'];
 var active_program = 0;
 
 var programList = programmer.map(function (program, i) {
@@ -38,7 +38,7 @@ function startWorkout_clickHandler() {
 
 module.exports = {
   programList: programList,
-  
+
   go_back: go_back_clickHandler,
   program: program_clickHandler,
   startWorkout: startWorkout_clickHandler
