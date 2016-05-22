@@ -32,8 +32,14 @@ function program_clickHandler(obj) {
   });
 }
 
+function startWorkout_clickHandler() {
+  router.push('workout');
+}
+
 module.exports = {
-  go_back_clicked: go_back_clickHandler,
   programList: programList,
-  program_clicked: program_clickHandler
+  
+  go_back: go_back_clickHandler,
+  program: program_clickHandler,
+  startWorkout: startWorkout_clickHandler
 };
