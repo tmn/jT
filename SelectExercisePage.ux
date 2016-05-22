@@ -21,7 +21,9 @@
     </DockPanel>
 
     <StackPanel Padding="25">
-      <Button Text="START TRENING" />
+      <NativeViewHost>
+        <Button Text="START TRENING" />
+      </NativeViewHost>
     </StackPanel>
   </Grid>
 </Panel>
