@@ -1,0 +1,7 @@
+<Panel ux:Class="SummaryPage">
+  <Router ux:Dependency="router" />
+  <JavaScript File="./js/SummaryPage.js" />
+
+  
+
+</Panel>
