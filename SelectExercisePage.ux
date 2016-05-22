@@ -2,6 +2,8 @@
   <Router ux:Dependency="router" />
   <JavaScript File="./js/SelectExercisePage.js" />
 
+  <iOS.StatusBarConfig Style="Dark" />
+
   <Grid Rows="1*, 1*, 1*">
     <DockPanel Margin="25">
       <BackButton Dock="Top" Alignment="Left" Clicked="{go_back_clicked}" HitTestMode="LocalBoundsAndChildren" />
