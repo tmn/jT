@@ -14,6 +14,7 @@
 		<LoginPage ux:Template="login" router="router" />
 		<HomePage ux:Template="home" router="router" />
 		<SelectExercisePage ux:Template="selectExercise" router="router" />
+		<WorkoutPage ux:Template="workout" router="router" />
 		<MenuPage ux:Template="menu" router="router" />
 	</Navigator>
 </App>
