@@ -1,4 +1,6 @@
 {
+  "Title": "jT",
+  "Version": "1.0.0",
   "RootNamespace":"",
   "Packages": [
     "Fuse",
@@ -7,5 +9,14 @@
   "Includes": [
     "*",
     "js/*.js:Bundle"
-  ]
+  ],
+  "iOS": {
+    "BundleIdentifier": "io.tmn.jt",
+    "BundleName": "$(Title)",
+    "DeploymentTarget": "9.1",
+    "Devices": "iPhone",
+    "Plist": {
+      "ITSAppUsesNonExemptEncryption": false
+    }
+  },
 }
