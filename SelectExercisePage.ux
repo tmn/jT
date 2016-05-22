@@ -2,7 +2,7 @@
   <Router ux:Dependency="router" />
   <JavaScript File="./js/SelectExercisePage.js" />
 
-  <Grid RowCount="3">
+  <Grid Rows="1*, 1*, 1*">
     <DockPanel Margin="25">
       <BackButton Dock="Top" Alignment="Left" Clicked="{go_back_clicked}" HitTestMode="LocalBoundsAndChildren" />
       <Text Font="Thin" FontSize="20" Value="VELG TRENINGSPROGRAM" Alignment="Center" />
