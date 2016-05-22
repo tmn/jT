@@ -1,0 +1,7 @@
+<Panel ux:Class="StartNewExerciseButton">
+  <Rectangle Fill="#fff" Width="2" Height="13" />
+
+  <Rectangle Fill="#fff" Width="2" Height="13">
+    <Rotation Degrees="90" />
+  </Rectangle>
+</Panel>

@@ -1,7 +1,0 @@
-<Panel ux:Class="PlusSign">
-  <Rectangle Fill="#000" Width="2" Height="13" />
-
-  <Rectangle Fill="#000" Width="2" Height="13">
-    <Rotation Degrees="90" />
-  </Rectangle>
-</Panel>
