@@ -1,0 +1,32 @@
+<Panel ux:Class="WorkoutPage">
+  <Router ux:Dependency="router" />
+  <JavaScript File="./js/WorkoutPage.js" />
+
+  <Grid Rows="1*, 1*, 1*">
+    <DockPanel Margin="25">
+      <Panel Dock="Top">
+        <Text Font="Light" FontSize="14" Value="AVBRYT TRENING" TextColor="#c22020" Alignment="Left" Clicked="{cancel_clicked}" HitTestMode="LocalBoundsAndChildren" />
+        <Text Font="Light" FontSize="14" Value="FERDIG" TextColor="#2168ad" Alignment="Right" />
+      </Panel>
+      <Text Font="Thin" FontSize="20" Value="ØVELSER" Alignment="Center" />
+    </DockPanel>
+
+    <DockPanel>
+      <!-- <ScrollView Background="#efefef">
+        <StackPanel >
+          <Each Items="{programList}">
+            <Panel Padding="25, 10, 25, 10" Background="{backgroundColor}" Clicked="{program}">
+              <Text Font="Light" FontSize="14" TextColor="{textColor}" Value="{name}" />
+            </Panel>
+          </Each>
+        </StackPanel>
+      </ScrollView> -->
+    </DockPanel>
+
+    <StackPanel Padding="25">
+      <NativeViewHost>
+        <Button Text="LEGG TIL NY ØVELSE TRENING" Clicked="{startWorkout}" />
+      </NativeViewHost>
+    </StackPanel>
+  </Grid>
+</Panel>
