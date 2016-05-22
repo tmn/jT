@@ -11,7 +11,7 @@
     </DockPanel>
 
     <DockPanel>
-      <ScrollView Background="#efefef">
+      <ScrollView >
         <StackPanel >
           <Each Items="{programList}">
             <Panel Padding="25, 10, 25, 10" Background="{backgroundColor}" Clicked="{program}">
