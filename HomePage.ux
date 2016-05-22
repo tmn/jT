@@ -2,6 +2,8 @@
   <Router ux:Dependency="router" />
   <JavaScript File="./js/HomePage.js" />
 
+  <iOS.StatusBarConfig Style="Light" />
+
   <Text ux:Class="GoalText" Font="Light" FontSize="12" TextColor="#ffffff40" />
 
   <Grid RowCount="2">
