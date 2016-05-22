@@ -12,7 +12,20 @@
       </DockPanel>
 
       <!-- Graph goes here -->
-      <WebView Url="./GraphView/graph.html" />
+      <NativeViewHost>
+        <WebView >
+          <HTML>
+            <![CDATA[
+            <h1 id="test">Hei</h1>
+            ]]>
+          </HTML>
+          <PageLoaded>
+            <EvaluateJS>
+              document.getElementById('test').innerHTML = 'wooop';
+            </EvaluateJS>
+          </PageLoaded>
+        </WebView>
+      </NativeViewHost>
     </DockPanel>
 
     <DockPanel Background="#181818" Padding="25, 25, 25, 0">
